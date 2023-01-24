@@ -25,8 +25,8 @@
       <div class="row border-green-t p-2">
         <div class="col-2"><h3>Priority filter:</h3></div>
         <div class="col-10 d-flex justify-content-center justify-content-around">
-          <button>Priority Express</button>
-          <button>Priority Standard</button>
+          <button onclick="filterByPriority()">Priority Express</button>
+          <button onclick="filterByStandard()">Priority Standard</button>
           <button onclick="filterByFree()">Priority Free</button>
         </div>
       </div>
@@ -44,9 +44,9 @@
           <h3>Weight Filter:</h3>
         </div>
         <div class="col-10 d-flex justify-content-center justify-content-around">
-          <button>Less than .5</button>
-          <button>1-10</button>
-          <button>greater than 10</button>
+          <button onclick="filterByLowWeight()">Less than 1</button>
+          <button onclick="filterByMidWeight()">1-10</button>
+          <button onclick="filterByHighWeight()">greater than 10</button>
         </div>
       </div>
       <div class="row pt-2 border-green-t d-flex">
