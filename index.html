@@ -10,7 +10,59 @@
   <title>WareHouse Management</title>
 </head>
 <body>
-  
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 bg-success text-dark p-2">
+          <h1>Package Management</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid bg-secondary">
+      <div class="row border-green-t p-2">
+        <div class="col-2"><h3>Priority filter:</h3></div>
+        <div class="col-10 d-flex justify-content-center justify-content-around">
+          <button>Priority Express</button>
+          <button>Priority Standard</button>
+          <button onclick="filterByFree()">Priority Free</button>
+        </div>
+      </div>
+      <div class="row pt-2 border-green-t d-flex">
+        <div class="col-2">
+          <h3>Fragile filter:</h3>
+        </div>
+        <div class="col-10 d-flex justify-content-center justify-content-around">
+          <button onclick="filterByFragile()">Fragile(must be italian)</button>
+          <button onclick="filterByNonFragile()">Non-fragile</button>
+        </div>
+      </div>
+      <div class="row pt-2 border-green-t d-flex">
+        <div class="col-2">
+          <h3>Weight Filter:</h3>
+        </div>
+        <div class="col-10 d-flex justify-content-center justify-content-around">
+          <button>Less than .5</button>
+          <button>1-10</button>
+          <button>greater than 10</button>
+        </div>
+      </div>
+      <div class="row pt-2 border-green-t d-flex">
+        <div class="col-12">
+          <button onclick="resetPackages()">Reset Filters</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-danger">
+      <div class="row" id="package-row">
+        
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
 
 
 
