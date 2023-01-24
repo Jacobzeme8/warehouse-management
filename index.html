@@ -25,9 +25,9 @@
       <div class="row border-green-t p-2">
         <div class="col-2"><h3>Priority filter:</h3></div>
         <div class="col-10 d-flex justify-content-center justify-content-around">
-          <button onclick="filterByPriority()">Priority Express</button>
-          <button onclick="filterByStandard()">Priority Standard</button>
-          <button onclick="filterByFree()">Priority Free</button>
+          <button onclick="filterByPriority('express')">Priority Express</button>
+          <button onclick="filterByPriority('standard')">Priority Standard</button>
+          <button onclick="filterByPriority('free')">Priority Free</button>
         </div>
       </div>
       <div class="row pt-2 border-green-t d-flex">
@@ -35,8 +35,8 @@
           <h3>Fragile filter:</h3>
         </div>
         <div class="col-10 d-flex justify-content-center justify-content-around">
-          <button onclick="filterByFragile()">Fragile(must be italian)</button>
-          <button onclick="filterByNonFragile()">Non-fragile</button>
+          <button onclick="filterFragile()">Fragile(must be italian)</button>
+          <button onclick="filterFragile(false)">Non-fragile</button>
         </div>
       </div>
       <div class="row pt-2 border-green-t d-flex">
@@ -44,9 +44,9 @@
           <h3>Weight Filter:</h3>
         </div>
         <div class="col-10 d-flex justify-content-center justify-content-around">
-          <button onclick="filterByLowWeight()">Less than 1</button>
-          <button onclick="filterByMidWeight()">1-10</button>
-          <button onclick="filterByHighWeight()">greater than 10</button>
+          <button onclick="filterWeight(1, 0)">Less than 1</button>
+          <button onclick="filterWeight(1, 10)">1-10</button>
+          <button onclick="filterWeight(10, 0)">greater than 10</button>
         </div>
       </div>
       <div class="row pt-2 border-green-t d-flex">
